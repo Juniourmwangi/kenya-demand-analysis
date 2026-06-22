@@ -4,7 +4,7 @@
 
 ---
 
-## 📊 Project Overview
+##  Project Overview
 
 This project answers the question:
 **"What are Kenyans actively searching for — and what does that tell us about market demand?"**
@@ -13,24 +13,24 @@ Using Google Trends data, this pipeline tracks **40 keywords across 8 industries
 
 ---
 
-## 🔑 Key Findings
+##  Key Findings
 
 | Rank | Product | Avg Interest |
 |------|---------|-------------|
-| 🥇 | Land Kenya | 77.7 |
-| 🥈 | Mpesa Kenya | 72.2 |
-| 🥉 | Seeds Kenya | 70.8 |
+| 1 | Land Kenya | 77.7 |
+| 2 | Mpesa Kenya | 72.2 |
+| 3 | Seeds Kenya | 70.8 |
 | 4 | Insurance Kenya | 69.7 |
 | 5 | Laptops Kenya | 64.8 |
 
-- 📱 **Electronics** is the top performing category (53.1 avg)
-- 🛒 **November/December** is peak consumer demand season
-- 📈 **TVs** is the only product with growing demand
-- 🌱 **Agriculture** has huge demand but is underserved online
+-  **Electronics** is the top performing category (53.1 avg)
+-  **November/December** is peak consumer demand season
+-  **TVs** is the only product with growing demand
+-  **Agriculture** has huge demand but is underserved online
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Tool | Purpose |
 |------|---------|
@@ -47,7 +47,7 @@ Using Google Trends data, this pipeline tracks **40 keywords across 8 industries
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 kenya_demand_analysis/
@@ -67,7 +67,7 @@ kenya_demand_analysis/
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 ### 1. Clone the repository
 ```bash
@@ -125,7 +125,7 @@ py visualize.py
 
 ---
 
-## 📈 Charts Generated
+##  Charts Generated
 
 ### Top 10 Most Searched Products
 ![Top 10 Products](outputs/top10_products.png)
@@ -141,7 +141,7 @@ py visualize.py
 
 ---
 
-## 🔮 Next Steps
+##  Next Steps
 
 - [ ] Power BI dashboard integration
 - [ ] Automated weekly data refresh (Task Scheduler)
@@ -151,15 +151,14 @@ py visualize.py
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **James Mwangi**
-- Internal Auditor | EKA Hotel Eldoret
-- Final Year BBIT Student | KCA University
+- Internal Auditor | Data Analyst
 - X: [@I_am_Mwangi](https://twitter.com/I_am_Mwangi)
 
 ---
 
-## 📄 License
+##  License
 
 MIT License — free to use and modify.
