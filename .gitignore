@@ -1,0 +1,16 @@
+# Database credentials - never share these
+config.py
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# VS Code settings
+.vscode/
+
+# Snapshots folder
+.snapshots/
+
+# Environment files
+.env
