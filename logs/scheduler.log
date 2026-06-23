@@ -1,0 +1,315 @@
+2026-06-23 03:46:54 — INFO — ========================================
+2026-06-23 03:46:54 — INFO — WEEKLY REFRESH STARTED
+2026-06-23 03:46:54 — INFO — Starting pull_data.py
+2026-06-23 03:46:59 — ERROR — pull_data.py FAILED:
+Traceback (most recent call last):
+  File "C:\Users\James Mwangi\Desktop\James\Skills\kenya_demand_analysis\kenya_demand_analysis\pull_data.py", line 36, in <module>
+    print("\U0001f50d Connecting to Google Trends...")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\James Mwangi\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f50d' in position 0: character maps to <undefined>
+
+2026-06-23 03:46:59 — INFO — Starting queries.py
+2026-06-23 03:47:00 — ERROR — queries.py FAILED:
+Traceback (most recent call last):
+  File "C:\Users\James Mwangi\Desktop\James\Skills\kenya_demand_analysis\kenya_demand_analysis\queries.py", line 33, in <module>
+    print("\n\U0001f4ca TOP 10 MOST SEARCHED PRODUCTS IN KENYA")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\James Mwangi\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4ca' in position 2: character maps to <undefined>
+
+2026-06-23 03:47:00 — INFO — Starting visualize.py
+2026-06-23 03:47:02 — ERROR — visualize.py FAILED:
+Traceback (most recent call last):
+  File "C:\Users\James Mwangi\Desktop\James\Skills\kenya_demand_analysis\kenya_demand_analysis\visualize.py", line 14, in <module>
+    print("\U0001f3a8 Building Kenya Market Demand Charts...")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\James Mwangi\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f3a8' in position 0: character maps to <undefined>
+
+2026-06-23 03:47:02 — INFO — Starting export_excel.py
+2026-06-23 03:47:04 — ERROR — export_excel.py FAILED:
+Traceback (most recent call last):
+  File "C:\Users\James Mwangi\Desktop\James\Skills\kenya_demand_analysis\kenya_demand_analysis\export_excel.py", line 16, in <module>
+    print("\U0001f4ca Pulling data from PostgreSQL...")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\James Mwangi\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4ca' in position 0: character maps to <undefined>
+
+2026-06-23 03:47:04 — INFO — WEEKLY REFRESH COMPLETE
+2026-06-23 03:49:42 — INFO — ========================================
+2026-06-23 03:49:42 — INFO — WEEKLY REFRESH STARTED
+2026-06-23 03:49:42 — INFO — Starting pull_data.py
+2026-06-23 03:50:29 — INFO — pull_data.py SUCCESS:
+\U0001f50d Connecting to Google Trends...
+   Pulling group 1/8: ['smartphones Kenya', 'laptops Kenya', 'TVs Kenya', 'earphones Kenya', 'generators Kenya']
+   Pulling group 2/8: ['clothes online Kenya', 'sneakers Kenya', 'handbags Kenya', 'segunda Kenya', 'mitumba Kenya']
+   Pulling group 3/8: ['supermarket Kenya', 'food delivery Kenya', 'cooking gas Kenya', 'unga Kenya', 'sukuma wiki Kenya']
+   Pulling group 4/8: ['salon equipment Kenya', 'wigs Kenya', 'weaves Kenya', 'skincare Kenya', 'perfume Kenya']
+   Pulling group 5/8: ['houses for sale Nairobi', 'land Kenya', 'bedsitter Nairobi', 'Airbnb Kenya', 'rental houses Kenya']
+   Pulling group 6/8: ['fertilizer Kenya', 'seeds Kenya', 'poultry Kenya', 'greenhouse Kenya', 'dairy farming Kenya']
+   Pulling group 7/8: ['loans Kenya', 'Mpesa Kenya', 'Fuliza Kenya', 'forex Kenya', 'crypto Kenya']
+   Pulling group 8/8: ['pharmacy Kenya', 'hospital Kenya', 'insurance Kenya', 'chemist Kenya', 'dawa Kenya']
+
+\u2705 Pulled 8 groups successfully!
+
+\U0001f9f9 Cleaning data...
+\u2705 Total rows ready: 2120
+         date            keyword  interest region
+0  2025-06-22  smartphones Kenya        27  Kenya
+1  2025-06-29  smartphones Kenya         0  Kenya
+2  2025-07-06  smartphones Kenya         0  Kenya
+3  2025-07-13  smartphones Kenya         0  Kenya
+4  2025-07-20  smartphones Kenya         0  Kenya
+5  2025-07-27  smartphones Kenya         0  Kenya
+6  2025-08-03  smartphones Kenya         0  Kenya
+7  2025-08-10  smartphones Kenya        24  Kenya
+8  2025-08-17  smartphones Kenya         0  Kenya
+9  2025-08-24  smartphones Kenya         0  Kenya
+
+\U0001f4be Saving to PostgreSQL...
+\u2705 2120 rows saved to PostgreSQL!
+\U0001f389 Full Kenya Market Pipeline Complete!
+
+2026-06-23 03:50:29 — INFO — Starting queries.py
+2026-06-23 03:50:30 — INFO — queries.py SUCCESS:
+============================================================
+   KENYA CONSUMER DEMAND ANALYSIS — SQL INSIGHTS
+============================================================
+
+\U0001f4ca TOP 10 MOST SEARCHED PRODUCTS IN KENYA
+------------------------------------------------------------
+          keyword  avg_interest  peak_interest
+       land Kenya          77.9            100
+      Mpesa Kenya          72.4            100
+    perfume Kenya          70.9            100
+      seeds Kenya          70.6            100
+  insurance Kenya          69.2            100
+    laptops Kenya          64.9            100
+supermarket Kenya          64.7            100
+        TVs Kenya          61.7             94
+   sneakers Kenya          57.8            100
+   hospital Kenya          47.7             67
+
+\U0001f3c6 DEMAND BY CATEGORY
+------------------------------------------------------------
+      category  avg_interest  peak_interest  data_points
+Beauty & Salon          56.6            100           70
+   Electronics          53.4            100          142
+Food & Grocery          48.9            100           80
+       Fashion          48.4            100           31
+   Agriculture          40.4            100          171
+   Real Estate          36.3            100          127
+       Finance          35.9            100          220
+        Health          34.6            100          214
+
+\U0001f4c5 MONTHLY DEMAND TRENDS
+------------------------------------------------------------
+   month  avg_interest  keywords_tracked
+Jun 2025          45.2                19
+Jul 2025          47.0                23
+Aug 2025          46.3                25
+Sep 2025          44.4                22
+Oct 2025          43.1                20
+Nov 2025          46.8                25
+Dec 2025          41.5                24
+Jan 2026          41.1                28
+Feb 2026          43.8                25
+Mar 2026          45.2                27
+Apr 2026          39.9                24
+May 2026          40.3                29
+Jun 2026          21.2                38
+
+\U0001f525 TOP 5 PEAK DEMAND MOMENTS
+------------------------------------------------------------
+      date           keyword  interest
+2025-07-06 supermarket Kenya       100
+2025-06-29 supermarket Kenya       100
+2025-11-23    sneakers Kenya       100
+2025-08-31     laptops Kenya       100
+2025-11-23     perfume Kenya       100
+
+\U0001f4c8 RISING PRODUCTS — RECENT vs PREVIOUS 3 MONTHS
+------------------------------------------------------------
+          keyword  recent_avg  previous_avg
+       land Kenya        77.1          78.9
+      Mpesa Kenya        64.2          66.4
+  insurance Kenya        61.8          77.2
+    perfume Kenya        61.0          71.8
+      seeds Kenya        59.5          74.9
+        TVs Kenya        59.4          60.0
+supermarket Kenya        59.2          62.6
+    laptops Kenya        57.1          67.3
+   hospital Kenya        41.5          49.4
+   sneakers Kenya        41.2          56.3
+
+\u2705 Analysis Complete!
+
+2026-06-23 03:50:30 — INFO — Starting visualize.py
+2026-06-23 03:54:08 — INFO — visualize.py SUCCESS:
+\U0001f3a8 Building Kenya Market Demand Charts...
+\u2705 Chart 1 saved — Top 10 Products
+\u2705 Chart 2 saved — Demand by Category
+\u2705 Chart 3 saved — Monthly Trend
+\u2705 Chart 4 saved — Rising vs Falling
+
+\U0001f389 All 4 charts saved to outputs/ folder!
+\U0001f4c1 Location: kenya_demand_analysis/outputs/
+
+2026-06-23 03:54:08 — INFO — Starting export_excel.py
+2026-06-23 03:54:12 — INFO — export_excel.py SUCCESS:
+\U0001f4ca Pulling data from PostgreSQL...
+\u2705 Data pulled successfully!
+\u2705 Sheets written!
+
+\U0001f389 Excel report saved!
+\U0001f4c1 Location: outputs/Kenya_Demand_Analysis.xlsx
+\U0001f4cb Sheets: Top 10 Products | By Category | Monthly Trend | Rising vs Falling | Raw Data
+
+2026-06-23 03:54:12 — INFO — WEEKLY REFRESH COMPLETE
+2026-06-23 04:47:42 — INFO — ========================================
+2026-06-23 04:47:42 — INFO — WEEKLY REFRESH STARTED
+2026-06-23 04:47:42 — INFO — Starting pull_data.py
+2026-06-23 04:48:29 — INFO — pull_data.py SUCCESS:
+\U0001f50d Connecting to Google Trends...
+   Pulling group 1/8: ['smartphones Kenya', 'laptops Kenya', 'TVs Kenya', 'earphones Kenya', 'generators Kenya']
+   Pulling group 2/8: ['clothes online Kenya', 'sneakers Kenya', 'handbags Kenya', 'segunda Kenya', 'mitumba Kenya']
+   Pulling group 3/8: ['supermarket Kenya', 'food delivery Kenya', 'cooking gas Kenya', 'unga Kenya', 'sukuma wiki Kenya']
+   Pulling group 4/8: ['salon equipment Kenya', 'wigs Kenya', 'weaves Kenya', 'skincare Kenya', 'perfume Kenya']
+   Pulling group 5/8: ['houses for sale Nairobi', 'land Kenya', 'bedsitter Nairobi', 'Airbnb Kenya', 'rental houses Kenya']
+   Pulling group 6/8: ['fertilizer Kenya', 'seeds Kenya', 'poultry Kenya', 'greenhouse Kenya', 'dairy farming Kenya']
+   Pulling group 7/8: ['loans Kenya', 'Mpesa Kenya', 'Fuliza Kenya', 'forex Kenya', 'crypto Kenya']
+   Pulling group 8/8: ['pharmacy Kenya', 'hospital Kenya', 'insurance Kenya', 'chemist Kenya', 'dawa Kenya']
+
+\u2705 Pulled 8 groups successfully!
+
+\U0001f9f9 Cleaning data...
+\u2705 Total rows ready: 2120
+         date            keyword  interest region
+0  2025-06-22  smartphones Kenya        27  Kenya
+1  2025-06-29  smartphones Kenya         0  Kenya
+2  2025-07-06  smartphones Kenya         0  Kenya
+3  2025-07-13  smartphones Kenya         0  Kenya
+4  2025-07-20  smartphones Kenya         0  Kenya
+5  2025-07-27  smartphones Kenya         0  Kenya
+6  2025-08-03  smartphones Kenya         0  Kenya
+7  2025-08-10  smartphones Kenya        24  Kenya
+8  2025-08-17  smartphones Kenya         0  Kenya
+9  2025-08-24  smartphones Kenya         0  Kenya
+
+\U0001f4be Saving to PostgreSQL...
+\u2705 2120 rows saved to PostgreSQL!
+\U0001f389 Full Kenya Market Pipeline Complete!
+
+2026-06-23 04:48:29 — INFO — Starting queries.py
+2026-06-23 04:48:31 — INFO — queries.py SUCCESS:
+============================================================
+   KENYA CONSUMER DEMAND ANALYSIS — SQL INSIGHTS
+============================================================
+
+\U0001f4ca TOP 10 MOST SEARCHED PRODUCTS IN KENYA
+------------------------------------------------------------
+          keyword  avg_interest  peak_interest
+       land Kenya          77.8            100
+      Mpesa Kenya          72.4            100
+    perfume Kenya          70.8            100
+      seeds Kenya          70.5            100
+  insurance Kenya          69.2            100
+    laptops Kenya          64.9            100
+supermarket Kenya          64.7            100
+        TVs Kenya          61.7             94
+   sneakers Kenya          57.5            100
+   hospital Kenya          47.7             67
+
+\U0001f3c6 DEMAND BY CATEGORY
+------------------------------------------------------------
+      category  avg_interest  peak_interest  data_points
+Beauty & Salon          55.1            100           72
+   Electronics          53.8            100          141
+Food & Grocery          48.3            100           81
+       Fashion          48.2            100           31
+   Agriculture          40.6            100          170
+   Real Estate          36.3            100          127
+       Finance          35.9            100          220
+        Health          34.6            100          214
+
+\U0001f4c5 MONTHLY DEMAND TRENDS
+------------------------------------------------------------
+   month  avg_interest  keywords_tracked
+Jun 2025          45.2                19
+Jul 2025          47.0                23
+Aug 2025          46.3                25
+Sep 2025          44.4                22
+Oct 2025          43.1                20
+Nov 2025          46.8                25
+Dec 2025          41.5                24
+Jan 2026          41.1                28
+Feb 2026          43.8                25
+Mar 2026          45.2                27
+Apr 2026          39.9                24
+May 2026          40.3                29
+Jun 2026          20.8                38
+
+\U0001f525 TOP 5 PEAK DEMAND MOMENTS
+------------------------------------------------------------
+      date           keyword  interest
+2025-07-06 supermarket Kenya       100
+2025-06-29 supermarket Kenya       100
+2025-11-23    sneakers Kenya       100
+2025-08-31     laptops Kenya       100
+2025-11-23     perfume Kenya       100
+
+\U0001f4c8 RISING PRODUCTS — RECENT vs PREVIOUS 3 MONTHS
+------------------------------------------------------------
+          keyword  recent_avg  previous_avg
+       land Kenya        76.8          78.9
+      Mpesa Kenya        64.2          66.4
+  insurance Kenya        61.8          77.2
+    perfume Kenya        60.8          71.8
+      seeds Kenya        59.5          74.9
+        TVs Kenya        59.4          60.0
+supermarket Kenya        59.2          62.6
+    laptops Kenya        57.0          67.3
+   hospital Kenya        41.5          49.4
+   sneakers Kenya        40.2          56.3
+
+\u2705 Analysis Complete!
+
+2026-06-23 04:48:31 — INFO — Starting visualize.py
+2026-06-23 04:50:19 — INFO — visualize.py SUCCESS:
+\U0001f3a8 Building Kenya Market Demand Charts...
+\u2705 Chart 1 saved — Top 10 Products
+\u2705 Chart 2 saved — Demand by Category
+\u2705 Chart 3 saved — Monthly Trend
+\u2705 Chart 4 saved — Rising vs Falling
+
+\U0001f389 All 4 charts saved to outputs/ folder!
+\U0001f4c1 Location: kenya_demand_analysis/outputs/
+
+2026-06-23 04:50:19 — INFO — Starting export_excel.py
+2026-06-23 04:50:22 — INFO — export_excel.py SUCCESS:
+\U0001f4ca Pulling data from PostgreSQL...
+\u2705 Data pulled successfully!
+\u2705 Sheets written!
+
+\U0001f389 Excel report saved!
+\U0001f4c1 Location: outputs/Kenya_Demand_Analysis.xlsx
+\U0001f4cb Sheets: Top 10 Products | By Category | Monthly Trend | Rising vs Falling | Raw Data
+
+2026-06-23 04:50:22 — INFO — Starting alerts.py
+2026-06-23 04:50:24 — INFO — alerts.py SUCCESS:
+Checking for demand spikes...
+No spikes found this week.
+Sending weekly summary...
+OK Telegram alert sent!
+Alerts complete!
+
+2026-06-23 04:50:24 — INFO — WEEKLY REFRESH COMPLETE
