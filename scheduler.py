@@ -66,6 +66,7 @@ if __name__ == "__main__":
     run_script("queries.py")
     run_script("visualize.py")
     run_script("export_excel.py")
+    run_script("alerts.py") 
 
     print("\n" + "=" * 55)
     print(f"  WEEKLY REFRESH COMPLETE!")
